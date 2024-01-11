@@ -11,7 +11,7 @@ const Caroucel = () => {
                 <div key={`${res.title + res.path}`} className="relative">
                     <img src={res.img} className="w-full h-full object-cover min-h-screen max-h-screen" alt={`Image ${res.title}`} />
                     <div className="absolute inset-0 bg-black opacity-50"></div>
-                    <div className="absolute inset-0 flex flex-col items-center justify-start text-light top-1/3">
+                    <div className="absolute inset-0 flex flex-col items-center justify-start text-light top-1/4 md:top-1/3">
                         <div className="text-5xl font-bold w-4/5 text-center">
                             {res.title}
                         </div>
