@@ -14,9 +14,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import AnimatedNumbers from "react-animated-numbers";
 import { category, contactdetails, missionData, portfolios, services, skills, teams, total } from '../data/Data';
 import CustomCircularProgressbar from '../components/circularprogress';
-import Testimonial from '../components/testimonial';
+import Testimonial from '../components/Testimonial';
 import Contactform from '../components/Contactform';
-import { CircularProgressbar } from 'react-circular-progressbar';
+
 
 
 const Homepage = () => {
