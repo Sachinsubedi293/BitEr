@@ -41,16 +41,16 @@ const Homepage = () => {
           artists—we're your devoted digital collaborators.
         </p>
 
-        <div className="container w-4/5 mx-auto flex flex-wrap items-center p-2 justify-center">
+        <div className="container w-4/5 mx-auto flex flex-wrap items-start p-2">
           {/* Image on the Left */}
-          <div className="w-full md:w-1/2  flex justify-center">
+          <div className="w-full md:w-1/3 flex justify-center">
             <div className="max-w-xl overflow-hidden shadow-lg">
               <img className="w-full h-auto" src={image} alt="About Us Image" />
             </div>
           </div>
 
           {/* Text and Button on the Right */}
-          <div className="w-full md:w-1/2  p-8">
+          <div className="w-full md:w-2/3   px-4">
             <div className="text-2xl font-bold py-2 text-accent text-left">
               Why Bit-Er?
             </div>
