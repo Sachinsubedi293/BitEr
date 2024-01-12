@@ -200,8 +200,22 @@ export const portfolios = [
     img: image,
     title: "HEllo",
     category: "web",
-    gitlink:'',
-    viewlink:''
+    gitlink:'dd',
+    viewlink:'dd'
+  },
+  {
+    img: image,
+    title: "HEllo",
+    category: "web",
+    gitlink:'d',
+    viewlink:'d'
+  },
+  {
+    img: image,
+    title: "HEllo",
+    category: "web",
+    gitlink:'s',
+    viewlink:'s'
   },
   {
     img: image,
@@ -214,22 +228,8 @@ export const portfolios = [
     img: image,
     title: "HEllo",
     category: "web",
-    gitlink:'',
-    viewlink:''
-  },
-  {
-    img: image,
-    title: "HEllo",
-    category: "web",
-    gitlink:'',
-    viewlink:''
-  },
-  {
-    img: image,
-    title: "HEllo",
-    category: "web",
-    gitlink:'',
-    viewlink:''
+    gitlink:'jj',
+    viewlink:'jj'
   },
 ];
 // Our team

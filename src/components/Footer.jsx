@@ -87,7 +87,7 @@ const Footer = () => {
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
             <div className="text-sm text-light opacity-70 font-semibold py-1">
               © <span id="get-current-year">2023 </span>
-              <a href="/" className="text-light opacity-70 hover:text-primary" target="_blank">
+              <a href="/home" className="text-light opacity-70 hover:text-primary" target="_blank">
                 Bit-Er
               </a>{' '}
               All right reserved.
