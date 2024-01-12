@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Caroucel from '../components/Caroucel';
@@ -16,11 +16,15 @@ import { category, contactdetails, missionData, portfolios, services, skills, te
 import CustomCircularProgressbar from '../components/circularprogress';
 import Testimonial from '../components/Testimonial';
 import Contactform from '../components/Contactform';
+import { Link } from 'react-router-dom';
 
 
 
 const Homepage = () => {
   const image = 'https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       {/* Navbar */}
@@ -30,7 +34,7 @@ const Homepage = () => {
         <Caroucel />
       </section>
       {/* About us Content */}
-      <section className="container mx-auto text-center bg-light">
+      <section className="container mx-auto text-center bg-light" id='about'>
         <h2 className="text-3xl font-bold pb-10 pt-20 underline underline-offset-8 decoration-dashed decoration-4 uppercase text-dark">
           About Us
         </h2>
@@ -61,9 +65,11 @@ const Homepage = () => {
               groundbreaking digital experience.
             </p>
             <div className="w-full text-left">
-              <button className="bg-primary text-white py-3 px-5 mt-4 hover:bg-secondary hover:text-primary">
-                Learn More
+            <a  href='https://www.linkedin.com/in/bit-er-devs/' target='_blank' >
+              <button className="py-3 px-5 mt-4 bg-primary text-white  hover:bg-secondary hover:text-primary">
+                View Linkedin
               </button>
+              </a>
             </div>
           </div>
         </div>
@@ -84,7 +90,7 @@ const Homepage = () => {
         </section>
       </section>
       {/* Services */}
-      <section className="w-full bg-white text-center">
+      <section className="w-full bg-white text-center" id='services'>
         <h2 className="text-3xl font-bold pb-10 pt-20 mx-auto underline underline-offset-8 decoration-dashed decoration-4 uppercase text-dark">
           Our Services
         </h2>
@@ -157,7 +163,7 @@ const Homepage = () => {
       </section>
 
       {/* Portfolio */}
-      <section className="w-full bg-white mt-12 text-center">
+      <section className="w-full bg-white mt-12 text-center" id='portfolio'>
         <h2 className="text-3xl font-bold pb-10 pt-20 mx-auto underline underline-offset-8 decoration-dashed decoration-4 uppercase text-dark">
           OUR PORTFOLIO
         </h2>
@@ -208,9 +214,11 @@ const Homepage = () => {
               accumsan ullamcorper. Suspendisse leo purus, pellentesque posuere.
             </p>
           </header>
+          <a  href='https://www.linkedin.com/in/bit-er-devs/' target='_blank'>
           <button className="bg-light dark:bg-secondary text-primary py-3 px-5 mt-5 mb-10 hover:bg-secondary hover:text-light hover:-translate-y-1 uppercase transition-transform">
             Let's Make a Quote <FontAwesomeIcon icon={faArrowRight} />
           </button>
+          </a>
         </div>
       </section>
       {/*Testimonial*/}
@@ -240,7 +248,7 @@ const Homepage = () => {
       </section>
 
       {/* Contact */}
-      <section className='bg-light dark:bg-dark w-full mt-12 mb-10 text-center'>
+      <section className='bg-light dark:bg-dark w-full mt-12 mb-10 text-center' id='contact'>
         <h2 className="text-3xl font-bold mb-6 pt-10 mx-auto underline underline-offset-8 decoration-dashed decoration-4 uppercase text-dark dark:text-light">Contact us</h2>
         <p className='w-3/5 mx-auto mb-6 text-base font-normal dark:text-light' style={{ color: '#001908' }}>Quisque ac tincidunt ipsum egestas viverra mi, ac vehicula enim consectetur quis. In imperdiet varius elit, ut convallis lectus luctus quis.</p>
 
@@ -258,6 +266,7 @@ const Homepage = () => {
       </section>
       {/* Footer */}
       <Footer />
+
     </>
   );
 }

@@ -5,6 +5,10 @@
 *{
     font-family: 'Montserrat', sans-serif;
 }
+html{
+  scroll-behavior: smooth !important;
+  scroll-padding-top: 30px;
+}
 body{
     background-color: #f2f2f2;
 }
@@ -24,4 +28,5 @@ p{
     border-radius: 5px; /* Set the radius of the scrollbar thumb */
   }
   
+
   

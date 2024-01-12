@@ -1,49 +1,63 @@
-import { faDesktop,faLaptop,faTablet,faMobile,faTv,faMarker,faGlobe,faEye, faBars } from "@fortawesome/free-solid-svg-icons";
-import smallLogo from'../assets/smalllogo.svg';
-import Logo from'../assets/biglogo.svg';
-export var image= 'https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-export var logo=Logo;
-export var smalllogo=smallLogo;
-export const nav=[
-    {
-        title:"Home",
-        path:'/'
-    },
-    {
-        title:"About us",
-        path:'/about'
-    },
-    {
-        title:"Our Services",
-        path:'/services'
-    },
-    {
-        title:"Portfolio",
-        path:'/portfolio'
-    },
-    {
-        title:"Contact us",
-        path:'/contact'
-    },
-]
+import {
+  faDesktop,
+  faLaptop,
+  faTablet,
+  faMobile,
+  faTv,
+  faMarker,
+  faGlobe,
+  faEye,
+  faBars,
+} from "@fortawesome/free-solid-svg-icons";
+import Logo from "../assets/biglogo.svg";
+import smallLogo from "../assets/smalllogo.svg";
+
+export var logo = Logo;
+export var smalllogo = smallLogo;
+export var image =
+  "https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+
+// Navbar content
+export const nav = [
+  {
+    title: "Home",
+    path: "/home",
+  },
+  {
+    title: "About us",
+    path: "/home#about",
+  },
+  {
+    title: "Our Services",
+    path: "/services",
+  },
+  {
+    title: "Portfolio",
+    path: "/portfolio",
+  },
+  {
+    title: "Contact us",
+    path: "/contact",
+  },
+];
 
 // Caroucel Data
 
 export const carouceldata = [
   {
-    img: image,
+    img: "https://images.unsplash.com/photo-1484417894907-623942c8ee29?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "Web Development",
     des: "Unlock the Potential of Your Online Presence! Are you ready to elevate your business with a dynamic website? Our expert web development team crafts seamless, responsive, and user-friendly websites tailored to your unique needs. Let your digital footprint leave a lasting impression.",
     path: "/contact",
   },
   {
-    img: image,
+    img: "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "App Development",
     des: "Innovate, Captivate, Dominate!Launch your ideas into the digital realm with our top-notch app development services. We specialize in creating cutting-edge mobile applications that not only meet but exceed user expectations. Your vision, our code – the perfect app partnership.",
     path: "/contact",
   },
   {
-    img: image,
+    img: "https://plus.unsplash.com/premium_photo-1661593486413-d279b1a02e28?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "App Design",
     des: "Innovate, Captivate, Dominate!Launch your ideas into the digital realm with our top-notch app development services. We specialize in creating cutting-edge mobile applications that not only meet but exceed user expectations. Your vision, our code – the perfect app partnership.",
     path: "/contact",
@@ -51,10 +65,28 @@ export const carouceldata = [
 ];
 //About Data
 export const missionData = [
-    { imageUrl: image, icon: faGlobe,title:'dddd',dec:'ddddddddd' },
-    { imageUrl: image, icon: faEye,title:'dddd',dec:'ddddddddd' },
-    { imageUrl: image, icon: faBars,title:'dddd',dec:'ddddddddd' },
-  ];
+  {
+    imageUrl:
+      "https://lh3.googleusercontent.com/u/0/drive-viewer/AEYmBYS-wwofPqD1co5DveBAi-voCWBGrhBXXmcDd3lr1vUwUvnEMZg1WaINUe41uR83orbKBqzw6LvZLrTN8QkrMcXU0-Re_Q=w1366-h599",
+    icon: faGlobe,
+    title: "Our Mission",
+    dec: "At Bit-Er, we see a digital future in which everyone can access innovation. Our mission is to enable companies with state-of-the-art solutions, utilizing technology as a driver of expansion and prosperity.",
+  },
+  {
+    imageUrl:
+      "https://lh3.googleusercontent.com/u/0/drive-viewer/AEYmBYSR2A6OAcy0D0b5IT0yXz5aVgNUiNuc_Oy0kKlcaCgmxCKpoK_UPjviFTIn5eur4o1tyax-4sUVS0fojPaPOmo0l7FwiQ=w1366-h599",
+    icon: faEye,
+    title: "Our Vision",
+    dec: "At Bit-Er, we envision a digital landscape where innovation is accessible to all. We strive to empower businesses with cutting-edge solutions, making technology a catalyst for growth and success.",
+  },
+  {
+    imageUrl:
+      "https://images.unsplash.com/photo-1646931335361-e3c46150b11a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    icon: faBars,
+    title: "Our Objective",
+    dec: "Bit-Er aims to consistently deliver exceptional digital solutions, ensuring our clients stay ahead in the competitive landscape. We strive to be the catalyst for their sustained success.",
+  },
+];
 
 // Services Data
 export const services = [
@@ -116,24 +148,20 @@ export const skills = [
 
 export const total = [
   {
-    title: "Total Completed",
-    count: 1539,
+    title: "Our Clients",
+    count: 20,
+  },
+  {
+    title: "Completed Projects",
+    count: 10,
+  },
+  {
+    title: "Running Projects",
+    count: 10,
   },
   {
     title: "Total Completed",
-    count: 1539,
-  },
-  {
-    title: "Total Completed",
-    count: 1539,
-  },
-  {
-    title: "Total Completed",
-    count: 1539,
-  },
-  {
-    title: "Total Completed",
-    count: 1539,
+    count: 15,
   },
 ];
 
@@ -165,31 +193,43 @@ export const portfolios = [
     img: image,
     title: "HEllo",
     category: "web",
+    gitlink:'gfd',
+    viewlink:'gffd'
   },
   {
     img: image,
     title: "HEllo",
     category: "web",
+    gitlink:'',
+    viewlink:''
   },
   {
     img: image,
     title: "HEllo",
     category: "web",
+    gitlink:'',
+    viewlink:''
   },
   {
     img: image,
     title: "HEllo",
     category: "web",
+    gitlink:'',
+    viewlink:''
   },
   {
     img: image,
     title: "HEllo",
     category: "web",
+    gitlink:'',
+    viewlink:''
   },
   {
     img: image,
     title: "HEllo",
     category: "web",
+    gitlink:'',
+    viewlink:''
   },
 ];
 // Our team

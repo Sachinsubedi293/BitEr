@@ -1,8 +1,37 @@
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faCircle, faTruckLoading } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react'
-
+import React, { useState } from 'react'
+import { UploadData } from '../tools/Supabase';
+import Cookies from 'universal-cookie';
 const Contactform = () => {
+    const [Name, setName] = useState();
+    const [Email, setEmail] = useState();
+    const [Message, setMessage] = useState();
+    const [loading, setloading] = useState();
+    const cookies = new Cookies();
+    const [Already, setAlready] = useState(cookies.get('sended')?true:false);
+    const sendData = async () => {
+        setloading(true);
+
+        if (Name && Email && Message) {
+            try {
+                await UploadData(Name, Email, Message);
+                alert("Your message has been sent successfully!");
+                setAlready(true);
+                cookies.set("sended",true);
+            } catch (error) {
+                console.error(error);
+                alert("An error occurred while sending your message. Please try again later.");
+            }
+        } else {
+            alert("Please fill in all the fields.");
+        }
+
+        setloading(false);
+    }
+
+
+
     return (
         <section className="text-gray-700 body-font relative">
             <div className=" py-10 mx-auto">
@@ -18,6 +47,8 @@ const Contactform = () => {
                                     type="text"
                                     id="name"
                                     name="name"
+                                    required
+                                    onChange={(e) => { setName(e.target.value) }}
                                     className="w-full bg-gray-100 rounded border border-gray-300 focus:border-primary text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                                 />
                             </div>
@@ -33,6 +64,8 @@ const Contactform = () => {
                                 <input
                                     type="email"
                                     id="email"
+                                    required
+                                    onChange={(e) => { setEmail(e.target.value) }}
                                     name="email"
                                     className="w-full bg-gray-100 rounded border border-gray-300 focus:border-primary text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                                 />
@@ -49,14 +82,24 @@ const Contactform = () => {
                                 <textarea
                                     id="message"
                                     name="message"
+                                    required
+                                    onChange={(e) => { setMessage(e.target.value) }}
                                     className="w-full bg-gray-100 rounded border border-gray-300 focus:border-primary h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                                 ></textarea>
                             </div>
                         </div>
                         <div className="p-2 w-full">
-                            <button className="bg-primary dark:bg-secondary text-light py-3 px-5 mt-5 mb-10 hover:bg-secondary hover:text-primary hover:-translate-y-1 uppercase transition-transform">
-                                Send <FontAwesomeIcon icon={faArrowRight} />
-                            </button>
+                         {
+                            Already?
+                            <button className="bg-accent dark:bg-secondary text-light py-3 px-5 mt-5 mb-10 hover:bg-secondary hover:text-accent hover:-translate-y-1 uppercase transition-transform" onClick={sendData} disabled={loading}>
+                            {loading ? "Sending..." : "Send Again"} <FontAwesomeIcon icon={loading ? faTruckLoading : faArrowRight} spin={loading} />
+                        </button>
+                            :
+                            <button className="bg-primary dark:bg-secondary text-light py-3 px-5 mt-5 mb-10 hover:bg-secondary hover:text-primary hover:-translate-y-1 uppercase transition-transform" onClick={sendData} disabled={loading}>
+                            {loading ? "Sending..." : "Send"} <FontAwesomeIcon icon={loading ? faTruckLoading : faArrowRight} spin={loading} />
+                        </button>
+                         }
+
                         </div>
 
                     </div>

@@ -87,12 +87,17 @@ const Prtfolio = () => {
                   <div className="absolute top-0 left-0 text-light bg-dark opacity-50 w-full h-full transition-opacity"></div>
                   <div className="absolute w-full h-full top-0 flex flex-col items-center justify-center text-light transition">
                     <div className="flex justify-center mt-4">
+                      <a href={tool.viewlink} target="_blank" rel="noopener noreferrer">
                       <button className="mx-2 py-2 px-4 bg-primary text-white rounded-full hover:bg-light hover:text-dark" title="Preview">
                         <FontAwesomeIcon icon={faEye} />
                       </button>
+
+                      </a>
+                      <a href={tool.gitlink} target="_blank" rel="noopener noreferrer">
                       <button className="mx-2 py-2 px-4 bg-primary text-white rounded-full hover:bg-light hover:text-dark" title="More Details">
                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                       </button>
+                      </a>
                     </div>
                   </div>
                 </>
