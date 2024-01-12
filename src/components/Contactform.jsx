@@ -4,9 +4,9 @@ import React, { useState } from 'react'
 import { UploadData } from '../tools/Supabase';
 import Cookies from 'universal-cookie';
 const Contactform = () => {
-    const [Name, setName] = useState();
-    const [Email, setEmail] = useState();
-    const [Message, setMessage] = useState();
+    const [Name, setName] = useState("");
+    const [Email, setEmail] = useState("");
+    const [Message, setMessage] = useState("");
     const [loading, setloading] = useState();
     const cookies = new Cookies();
     const [Already, setAlready] = useState(cookies.get('sended')?true:false);

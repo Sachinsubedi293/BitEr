@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { logo, services, social } from '../data/Data';
+import { image, logo, services, social } from '../data/Data';
 import { HashLink } from 'react-router-hash-link';
 
 const Footer = () => {
@@ -33,7 +33,7 @@ const Footer = () => {
                   className={`bg-primary text-light shadow-lg font-normal h-12 w-12 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transform transition-transform duration-300 hover:scale-110`}
                   type="button"
                 >
-                  <i className={`fab fa-${res.name}`}></i>
+                  <a href={res.link} target="_blank" rel="noopener noreferrer"><img src={res.image} className='rounded-full' alt="" /></a>
                 </button>
               ))}
             </div>

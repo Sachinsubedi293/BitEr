@@ -30,15 +30,15 @@ export const nav = [
   },
   {
     title: "Our Services",
-    path: "/services",
+    path: "/#services",
   },
   {
     title: "Portfolio",
-    path: "/portfolio",
+    path: "/#portfolio",
   },
   {
     title: "Contact us",
-    path: "/contact",
+    path: "/#contact",
   },
 ];
 
@@ -370,17 +370,21 @@ export const social = [
   {
     name: "facebook",
     link: "https://www.facebook.com/profile.php?id=61550297994480",
+    image:''
   },
   {
     name: "linkedin",
     link: "https://www.linkedin.com/in/bit-er-devs/",
+    image:''
   },
   {
     name: "instagram",
     link: "https://www.instagram.com/_bit.er/",
+    image:image
   },
   {
     name: "github",
     link: "https://github.com/Bit-Er",
+    image:smalllogo
   },
 ];

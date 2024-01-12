@@ -72,17 +72,11 @@ const TermsAndConditions = () => {
         </p>
       </section>
 
-      <section className="mb-8 text-start">
-        <h2 className="text-xl font-bold mb-2">8. Governing Law:(optional till we are legally established)</h2>
-        <p>
-          <span className="font-bold">8.1 Jurisdiction:</span> These terms and conditions are governed by and construed in accordance with the laws of the jurisdiction where Bit-Er is legally established.
-        </p>
-      </section>
 
       <section className="mb-8 text-start">
-        <h2 className="text-xl font-bold mb-2">9. Contact Information:</h2>
+        <h2 className="text-xl font-bold mb-2">8. Contact Information:</h2>
         <p>
-          <span className="font-bold">9.1 Contact Us:</span> If you have any questions or concerns regarding these terms and conditions, please contact us at <a href="mailto:contact.bit.er@gmail.com" className="text-primary">contact.bit.er@gmail.com</a>.
+          <span className="font-bold">8.1 Contact Us:</span> If you have any questions or concerns regarding these terms and conditions, please contact us at <a href="mailto:contact.bit.er@gmail.com" className="text-primary">contact.bit.er@gmail.com</a>.
         </p>
       </section>
     </div>
