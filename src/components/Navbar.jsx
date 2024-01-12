@@ -47,11 +47,11 @@ const Navbar = () => {
   const logoSize = isSmall ? 'w-20 h-20' : 'w-40'; // Adjust the sizes as needed
 
   return (
-    <header className={`w-full flex fixed  z-20 justify-center transition-colors py-2 ${color || (isMobileMenuOpen && isSmall) || location.pathname != "/home" ? 'bg-dark bg-opacity-90' : 'bg-transparent'}`}>
+    <header className={`w-full flex fixed  z-20 justify-center transition-colors py-2 ${color || (isMobileMenuOpen && isSmall) || location.pathname != "/" ? 'bg-dark bg-opacity-90' : 'bg-transparent'}`}>
       <div className={`w-4/5 flex flex-row justify-between items-center`}>
         <div className={`text-light z-20 text-center ${logoSize}`}>
           {/* Logo */}
-          <a href="/home">        
+          <a href="/">        
             <img src={mainLogo} alt={logoAlt} className='my-auto' />
           </a>
         </div>

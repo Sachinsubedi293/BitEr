@@ -21,11 +21,11 @@ export var image =
 export const nav = [
   {
     title: "Home",
-    path: "/home",
+    path: "/",
   },
   {
     title: "About us",
-    path: "/home#about",
+    path: "/#about",
   },
   {
     title: "Our Services",

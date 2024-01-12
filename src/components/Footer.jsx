@@ -38,7 +38,7 @@ const Footer = () => {
             </div>
           </div>
           {isSmall?<></>:<div className="w-2/12">
-            <div className="flex flex-wrap items-center lg:justify-end justify-center mx-auto text-left mt-3 mb-2"><a href={'/home'}><img src={logo} alt="Logo" /></a></div>
+            <div className="flex flex-wrap items-center lg:justify-end justify-center mx-auto text-left mt-3 mb-2"><a href={'/'}><img src={logo} alt="Logo" /></a></div>
           </div>}
           <div className="w-full lg:w-5/12 px-4">
             <div className="flex flex-wrap items-top mb-6 text-center mt-3">
@@ -58,13 +58,13 @@ const Footer = () => {
                 <span className="block uppercase text-light text-xl font-semibold mb-2">Useful Links</span>
                 <ul className="list-unstyled">
                   <li>
-                    <HashLink className="text-light  block pb-2 opacity-70 text-sm  hover:text-primary" smooth to={location.pathname!='/home'?`/home#about`:'#about'}>About Us</HashLink>
+                    <HashLink className="text-light  block pb-2 opacity-70 text-sm  hover:text-primary" smooth to={location.pathname!='/'?`/#about`:'#about'}>About Us</HashLink>
                   </li>
                   <li>
                     <HashLink className="text-light block pb-2 opacity-70 text-sm  hover:text-primary" smooth to="https://github.com/Bit-Er" target='_blank'>Github</HashLink>
                   </li>
                   <li>
-                    <HashLink className="text-light block pb-2 opacity-70 text-sm  hover:text-primary" smooth to={location.pathname!='/home'?`/home#contact`:'#contact'}>Contact us</HashLink>
+                    <HashLink className="text-light block pb-2 opacity-70 text-sm  hover:text-primary" smooth to={location.pathname!='/'?`/#contact`:'#contact'}>Contact us</HashLink>
                   </li>
                 </ul>
               </div>
@@ -87,7 +87,7 @@ const Footer = () => {
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
             <div className="text-sm text-light opacity-70 font-semibold py-1">
               © <span id="get-current-year">2023 </span>
-              <a href="/home" className="text-light opacity-70 hover:text-primary" target="_blank">
+              <a href="/" className="text-light opacity-70 hover:text-primary" target="_blank">
                 Bit-Er
               </a>{' '}
               All right reserved.

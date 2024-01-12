@@ -8,9 +8,9 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Redirect from "/" to "/home" */}
-        <Route path="/" element={<Navigate to="/home" replace />} />
-        <Route path="/home" element={<Homepage />} />
+
+     
+        <Route path="/" element={<Homepage />} />
         <Route path="/terms" element={<TermsAndConditions />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
       </Routes>
