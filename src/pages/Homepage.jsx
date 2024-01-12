@@ -12,7 +12,7 @@ import Contactcard from '../components/Contactcard';
 import ToolsSlider from '../components/ToolsSlider';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import AnimatedNumbers from "react-animated-numbers";
-import { category, contactdetails, missionData, portfolios, services, skills, teams, total } from '../data/Data';
+import { bannerimage, category, contactdetails, missionData, portfolios, services, skills, teams, total } from '../data/Data';
 import CustomCircularProgressbar from '../components/circularprogress';
 import Testimonial from '../components/Testimonial';
 import Contactform from '../components/Contactform';
@@ -49,7 +49,7 @@ const Homepage = () => {
           {/* Image on the Left */}
           <div className="w-full md:w-1/3 flex justify-center">
             <div className="max-w-xl overflow-hidden shadow-lg">
-              <img className="w-full h-auto" src={image} alt="About Us Image" />
+              <img className="w-full h-auto rounded-md" src={bannerimage} alt="About Us Image" />
             </div>
           </div>
 
@@ -260,7 +260,7 @@ const Homepage = () => {
             </div>
           </div>
           <div className="lg:w-2/5 lg:ml-auto mt-4 lg:mt-0">
-            <img src={image} alt="" className="w-full" />
+            <img src={bannerimage}  alt="" className="w-full rounded-md" />
           </div>
         </div>
       </section>

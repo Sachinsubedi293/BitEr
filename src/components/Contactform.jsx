@@ -16,7 +16,7 @@ const Contactform = () => {
         if (Name && Email && Message) {
             try {
                 await UploadData(Name, Email, Message);
-                alert("Your message has been sent successfully!");
+                alert("Your message has been sent successfully! Thank yu for reaching out. We will contact to you shortly.");
                 setAlready(true);
                 cookies.set("sended",true);
             } catch (error) {

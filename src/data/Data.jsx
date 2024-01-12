@@ -11,7 +11,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Logo from "../assets/biglogo.svg";
 import smallLogo from "../assets/smalllogo.svg";
-
+import BannerImage from '../assets/Banner.svg'
+export var bannerimage=BannerImage;
 export var logo = Logo;
 export var smalllogo = smallLogo;
 export var image =
