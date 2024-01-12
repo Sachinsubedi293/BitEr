@@ -66,7 +66,7 @@ const Homepage = () => {
             </p>
             <div className="w-full text-left">
             <a  href='https://www.linkedin.com/in/bit-er-devs/' target='_blank' >
-              <button className="py-3 px-5 mt-4 bg-primary text-white  hover:bg-secondary hover:text-primary">
+              <button name='linkedin' className="py-3 px-5 mt-4 bg-primary text-white  hover:bg-secondary hover:text-primary">
                 View Linkedin
               </button>
               </a>
@@ -215,7 +215,7 @@ const Homepage = () => {
             </p>
           </header>
           <a  href='https://www.linkedin.com/in/bit-er-devs/' target='_blank'>
-          <button className="bg-light dark:bg-secondary text-primary py-3 px-5 mt-5 mb-10 hover:bg-secondary hover:text-light hover:-translate-y-1 uppercase transition-transform">
+          <button name='makequote' className="bg-light dark:bg-secondary text-primary py-3 px-5 mt-5 mb-10 hover:bg-secondary hover:text-light hover:-translate-y-1 uppercase transition-transform">
             Let's Make a Quote <FontAwesomeIcon icon={faArrowRight} />
           </button>
           </a>

@@ -91,11 +91,11 @@ const Contactform = () => {
                         <div className="p-2 w-full">
                          {
                             Already?
-                            <button className="bg-accent dark:bg-secondary text-light py-3 px-5 mt-5 mb-10 hover:bg-secondary hover:text-accent hover:-translate-y-1 uppercase transition-transform" onClick={sendData} disabled={loading}>
+                            <button name='Submit' className="bg-accent dark:bg-secondary text-light py-3 px-5 mt-5 mb-10 hover:bg-secondary hover:text-accent hover:-translate-y-1 uppercase transition-transform" onClick={sendData} disabled={loading}>
                             {loading ? "Sending..." : "Send Again"} <FontAwesomeIcon icon={loading ? faTruckLoading : faArrowRight} spin={loading} />
                         </button>
                             :
-                            <button className="bg-primary dark:bg-secondary text-light py-3 px-5 mt-5 mb-10 hover:bg-secondary hover:text-primary hover:-translate-y-1 uppercase transition-transform" onClick={sendData} disabled={loading}>
+                            <button name='Submit' className="bg-primary dark:bg-secondary text-light py-3 px-5 mt-5 mb-10 hover:bg-secondary hover:text-primary hover:-translate-y-1 uppercase transition-transform" onClick={sendData} disabled={loading}>
                             {loading ? "Sending..." : "Send"} <FontAwesomeIcon icon={loading ? faTruckLoading : faArrowRight} spin={loading} />
                         </button>
                          }
