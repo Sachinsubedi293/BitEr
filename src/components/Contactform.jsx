@@ -13,12 +13,15 @@ const Contactform = () => {
     const sendData = async () => {
         setloading(true);
 
-        if (Name && Email && Message) {
+        if (Name && Email ) {
             try {
                 await UploadData(Name, Email, Message);
-                alert("Your message has been sent successfully! Thank yu for reaching out. We will contact to you shortly.");
+                alert("Your message has been sent successfully! Thank you for reaching out. We will contact to you shortly.");
                 setAlready(true);
                 cookies.set("sended",true);
+                setEmail("");
+                setMessage("");
+                setName("");
             } catch (error) {
                 console.error(error);
                 alert("An error occurred while sending your message. Please try again later.");
@@ -48,6 +51,7 @@ const Contactform = () => {
                                     id="name"
                                     name="name"
                                     required
+                                    value={Name}
                                     onChange={(e) => { setName(e.target.value) }}
                                     className="w-full bg-gray-100 rounded border border-gray-300 focus:border-primary text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                                 />
@@ -64,6 +68,7 @@ const Contactform = () => {
                                 <input
                                     type="email"
                                     id="email"
+                                    value={Email}
                                     required
                                     onChange={(e) => { setEmail(e.target.value) }}
                                     name="email"
@@ -82,7 +87,8 @@ const Contactform = () => {
                                 <textarea
                                     id="message"
                                     name="message"
-                                    required
+                                    
+                                    value={Message}
                                     onChange={(e) => { setMessage(e.target.value) }}
                                     className="w-full bg-gray-100 rounded border border-gray-300 focus:border-primary h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                                 ></textarea>
