@@ -91,7 +91,6 @@ const Prtfolio = () => {
                       <button name='view' className="mx-2 py-2 px-4 bg-primary text-white rounded-full hover:bg-light hover:text-dark" title="Preview">
                         <FontAwesomeIcon icon={faEye} />
                       </button>
-
                       </a>
                       <a href={tool.gitlink} target="_blank" rel="noopener noreferrer">
                       <button name="checkcode" className="mx-2 py-2 px-4 bg-primary text-white rounded-full hover:bg-light hover:text-dark" title="More Details">
