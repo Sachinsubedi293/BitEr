@@ -82,7 +82,7 @@ const Navbar = () => {
 
         {/* Regular Navbar for Medium and Larger Screens */}
         {!isSmall && (
-          <nav className='my-auto hidden md:block'>
+          <nav className='my-auto md:block'>
             <ul className='flex justify-evenly gap-5 flex-row'>
               {nav.map((res) => (
                 <li key={res.title + res.path} className={`text-sm uppercase font-medium inline-block ${location.pathname === res.path ? 'text-primary' : 'text-light'} hover:text-primary cursor-pointer`}>
