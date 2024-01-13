@@ -20,11 +20,11 @@ const Prtfolio = () => {
     dots: true,
     
     infinite: true,
-    speed: 1000,
+    speed: 500,
     slidesToShow: 3, // Adjusted to at least 5 items initially
     slidesToScroll: 1,
     autoplay: true, // Enable autoplay
-    autoplaySpeed: 2000, // Set the autoplay speed in milliseconds (adjust as needed)
+    autoplaySpeed: 4000, // Set the autoplay speed in milliseconds (adjust as needed)
     ease: 'cubic-bezier(0.68, -0.55, 0.27, 1.55)',
     cssEase: 'cubic-bezier(0.68, -0.55, 0.27, 1.55)',
     responsive: [
